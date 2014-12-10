@@ -1,0 +1,29 @@
+<template name="layout">
+  <div id="wrapper">
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a href="/">
+                Rant
+            </a>
+        </li>
+        {{#each categories}}
+        <li>
+          <a href="/{{this.name}}">{{this.title}}</a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div id="page-content-wrapper">
+      <div class="col-md-offset-6 col-md-2 login-widget">
+      {{> loginButtons alight="right"}}
+      </div>
+      {{#if logged_in}}
+      <a class="col-md-offset-6 col-md-2 new-post-link" href="/posts/new">New Post</a>
+      {{/if}}
+      <div id="main" class="row-fluid">
+        {{> yield}}
+      </div>
+  </div>
+  </div>
+</template>

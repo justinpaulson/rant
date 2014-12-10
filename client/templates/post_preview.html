@@ -1,0 +1,9 @@
+<template name="postPreview">
+  <div class="post-preview">
+    {{> categorySidebar}}
+    <h4><a class="post-title" href="/posts/{{_id.toHexString}}">{{title}}</a></h4>
+    <div>
+      {{short_text}}
+    </div>
+  </div>
+</template>
