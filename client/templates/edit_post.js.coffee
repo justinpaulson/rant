@@ -21,3 +21,5 @@ Template.editPost.events
 Template.editPost.helpers
   selected: (option, value) ->
     if option == value then 'selected' else ''
+
+  categories: -> Categories.find({})

@@ -1,10 +1,14 @@
 <template name="showPost">
   {{#if logged_in}}
-  <a class="edit-post-link" href="/posts/{{_id.toHexString}}/edit">Edit Post</a>
+  <a class="edit-post-link align-right" href="/posts/{{_id.toHexString}}/edit">Edit Post</a>
   {{/if}}
-  {{> categorySidebar}}
-  <h3 class="post-title">{{title}}</h3>
-  <div class="post-text">
-    {{#markdown}}{{text}}{{/markdown}}
+  <div class="col-md-offset-1 col-md-1">
+    {{> categorySidebar}}
+  </div>
+  <div class="col-md-8">
+    <h3 class="post-title">{{title}}</h3>
+    <div class="post-text">
+      {{#markdown}}{{text}}{{/markdown}}
+    </div>
   </div>
 </template>

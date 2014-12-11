@@ -15,12 +15,19 @@
       </ul>
     </div>
     <div id="page-content-wrapper">
-      <div class="col-md-offset-6 col-md-2 login-widget">
-      {{> loginButtons alight="right"}}
+      <div class="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          {{#if logged_in}}
+          <li>
+            <a class="new-post-link" href="/posts/new">New Post</a>
+          </li>
+          <li>
+            <a class="new-category-link" href="/categories/new">New Category</a>
+          </li>
+          {{/if}}
+          {{> loginButtons alight="right"}}
+        </ul>
       </div>
-      {{#if logged_in}}
-      <a class="col-md-offset-6 col-md-2 new-post-link" href="/posts/new">New Post</a>
-      {{/if}}
       <div id="main" class="row-fluid">
         {{> yield}}
       </div>

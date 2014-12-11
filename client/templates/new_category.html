@@ -1,5 +1,5 @@
-<template name="newPost">
-  <form class="new-post-form">
+<template name="newCategory">
+  <form class="new-category-form">
     <div class="form-horizontal">
       <div class="form-group">
         <label class="col-md-3 control-label">Title</label>
@@ -8,19 +8,9 @@
         </div>
       </div>
       <div class="form-group">
-        <label class="col-md-3 control-label">Category</label>
+        <label class="col-md-3 control-label">Name</label>
         <div class="col-md-7">
-          <select class="form-control" id="category" name="category">
-            {{#each categories}}
-            <option value="{{this.name}}">{{this.title}}</option>
-            {{/each}}
-          </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="col-md-3 control-label">Post</label>
-        <div class="col-md-7">
-          <textarea class="form-control" name="text"></textarea>
+          <input class="form-control" type="text" name="name"/>
         </div>
       </div>
       <div class="col-md-offset-5">

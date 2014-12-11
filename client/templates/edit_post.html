@@ -1,6 +1,6 @@
 <template name="editPost">
   <form class="new-post-form">
-    <div class="form-horizontal align-center">
+    <div class="form-horizontal">
       <div class="form-group">
         <label class="col-md-3 control-label">Title</label>
         <div class="col-md-7">
@@ -23,8 +23,10 @@
           <textarea class="form-control" name="text">{{text}}</textarea>
         </div>
       </div>
-      <div class="col-md-offset-3">
-        <button class="btn btn-alarm" id="delete" type="button">Delete</button>
+      <div class="col-md-offset-3 col-md-2">
+        <button class="btn btn-danger" id="delete" type="button">Delete</button>
+      </div>
+      <div class="col-md-offset-8 alight-right">
         <button class="btn btn-default" id="cancel" type="button">Cancel</button>
         <button class="btn btn-primary" id="save" type="button">Save</button>
       </div>
