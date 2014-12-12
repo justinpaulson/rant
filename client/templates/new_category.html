@@ -1,11 +1,21 @@
-<template name="newCategory">
+<template name="editCategories">
   <form class="new-category-form">
     <div class="form-horizontal">
       <div class="form-group">
-        <label class="col-md-3 control-label">Title</label>
+        <label class="col-md-3 control-label">Categories</label>
         <div class="col-md-7">
-          <input class="form-control" type="text" name="title"/>
+          <select class="form-control" id="category" name="category">
+            {{#each categories}}
+            <option value="{{this.name}}">{{this.name}}</option>
+            {{/each}}
+          </select>
         </div>
+      </div>
+      <div class="col-md-10">
+        <button class="btn btn-danger" id="delete" type="button" style="float:right;">Delete</button>
+      </div>
+      <div class="row col-md-12" style="text-align:center;">
+        <h3>New Category</h3>
       </div>
       <div class="form-group">
         <label class="col-md-3 control-label">Name</label>
@@ -13,9 +23,28 @@
           <input class="form-control" type="text" name="name"/>
         </div>
       </div>
-      <div class="col-md-offset-5">
-        <button class="btn btn-default" id="cancel" type="button">Cancel</button>
-        <button class="btn btn-primary" id="save" type="button">Save</button>
+      <div class="form-group">
+        <label class="col-md-3 control-label">Color</label>
+        <div class="input-group col-md-7 color-picker" style="padding:0px 15px 0px 15px;">
+          <input type="text" value="" name="color" class="form-control">
+          <span class="input-group-addon"><i style="background-color: rgb(0, 0, 0);"></i></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 control-label">Image</label>
+        <div class="col-md-7">
+          {{> upload_bootstrap contentType='images'}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="uploaded-image align-center col-md-10">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <button class="btn btn-primary" id="save" type="button" style="float:right; margin-left:12px;">Save</button>
+          <button class="btn btn-default" id="cancel" type="button" style="float:right;">Cancel</button>
+        </div>
       </div>
     </div>
   </form>

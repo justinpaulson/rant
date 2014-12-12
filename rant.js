@@ -4,6 +4,14 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
-    // code to run on server at startup
+    UploadServer.init({
+      tmpDir: process.env.PWD + '/public/tmp',
+      uploadDir: process.env.PWD + '/public/'
+    })
   });
+
+  Meteor.methods({getCategories: function (name) {
+    console.log("Got here");
+    return Categories.findOne({name: name});
+  }});
 }

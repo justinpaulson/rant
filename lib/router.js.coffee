@@ -12,4 +12,4 @@ Router.route '/posts/:_id/edit',
 Router.route '/:category',
   name: 'showCategory',
   data: -> category: @params.category
-Router.route '/categories/new', name: 'newCategory'
+Router.route '/categories/edit', name: 'editCategories'
