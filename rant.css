@@ -118,14 +118,15 @@ body {
     }
 }
 
-.post-preview {
-    margin-bottom: 40px;
-}
-
 .colorpicker-hue {
     background-image: url("/hue.png");
 }
 
 .colorpicker-saturation {
     background-image: url("/saturation.png");
+}
+
+.post-body {
+    border-left: 2px solid black;
+    padding-bottom: 40px;
 }
