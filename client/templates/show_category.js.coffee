@@ -1,4 +1,3 @@
 Template.showCategory.helpers
   posts: ->
-    Posts.find
-      category: @category
+    Session.get 'posts'
