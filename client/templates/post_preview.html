@@ -6,7 +6,7 @@
     <div class="col-md-6 post-body" style="border-left: 2px solid {{category_color}};">
       <h4><a class="post-title" href="/posts/{{_id.toHexString}}">{{title}}</a></h4>
       <div>
-        {{short_text}}
+        {{#markdown}}{{short_text}}{{/markdown}}
       </div>
     </div>
   </div>
