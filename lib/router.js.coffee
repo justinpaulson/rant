@@ -1,11 +1,15 @@
 Router.configure
- layoutTemplate: 'layout'
+  layoutTemplate: 'layout',
+  waitOn: ->
+    $('li').removeClass 'active'
+
 
 Router.route '/', name: 'allPosts'
 Router.route '/posts/new', name: 'newPost'
 Router.route '/posts/:_id', 
   name: 'showPost',
   waitOn: ->
+    $('li').removeClass 'active'
     Meteor.call "getPost", (new Meteor.Collection.ObjectID(@params._id)), (error, result) -> 
       if error
         console.log error
@@ -26,4 +30,5 @@ Router.route '/:category',
         console.log error
       else 
         Session.set 'posts', result
+    $("li##{@params.category}").addClass 'active'
 Router.route '/categories/edit', name: 'editCategories'
