@@ -4,6 +4,7 @@ Template.editCategories.events
       _id:  new Meteor.Collection.ObjectID(),
       color: $("[name='color']").val(),
       name: $("[name='name']").val(),
+      image: $("[name='image']").val(),
       createdAt: new Date()
     window.location.reload()
 
@@ -17,8 +18,20 @@ Template.editCategories.events
   "click #cancel": (e) ->
     window.location = "/"
 
+  "click button.upload": (e) ->
+    e.preventDefault()
+    files = $("input.file_bag")[0].files
+    S3.upload files, "/icons", (e,r) =>
+      $('.uploaded-image').html "<img src='#{r.url}' height=50 width=50>"
+      $("[name='image']").val r.url
+
+  "change input.file_bag": ->
+    $('.progress-label').html $('input.file_bag')[0].files[0].name
+
 Template.editCategories.helpers
   categories: -> Categories.find({})
+
+  "files": -> S3.collection.find()
 
 Template.editCategories.rendered = () ->
   $(".color-picker").colorpicker()

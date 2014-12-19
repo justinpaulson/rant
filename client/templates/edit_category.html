@@ -33,12 +33,29 @@
       <div class="form-group">
         <label class="col-md-3 control-label">Image</label>
         <div class="col-md-7">
-          {{> upload_bootstrap contentType='images'}}
+          <div class="input-group">
+            <span class="input-group-btn">
+              <div class="btn btn-primary btn-file upload-control">
+                  Browse… <input type="file" class="file_bag" multiple="false" data-content-category="images" data-form-data="{&quot;contentType&quot;: &quot;images&quot;}">
+              </div>
+            </span>
+            <div type="text" class="form-control upload-control">
+              <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                      &nbsp;
+              </div>
+              <div class="progress-label">       
+              </div>
+            </div>   
+            <span class="input-group-btn">
+              <button class="btn btn-success upload">Upload</button>
+            </span>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="uploaded-image align-center col-md-10">
+        <div class="uploaded-image align-center col-md-12" style="text-align: center;">
         </div>
+        <input type="hidden" name="image">
       </div>
       <div class="row">
         <div class="col-md-10">
