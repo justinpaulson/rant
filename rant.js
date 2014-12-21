@@ -3,11 +3,6 @@ if (Meteor.isClient) {
 }
 
 if (Meteor.isServer) {
-  S3.config = {
-    key: 'AKIAIFA3VLVPSTS5JZGA',
-    secret: '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',
-    bucket: 'rant.meteor'
-  };
   
   Meteor.startup(function () {
     UploadServer.init({
