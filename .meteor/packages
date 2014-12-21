@@ -22,4 +22,7 @@ mrt:bootstrap-colorpicker-2
 tomi:upload-server
 tomi:upload-jquery
 lepozepo:s3
+accounts-facebook
+accounts-twitter
+accounts-google
 
