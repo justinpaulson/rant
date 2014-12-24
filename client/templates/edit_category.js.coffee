@@ -35,8 +35,3 @@ Template.editCategories.helpers
 
 Template.editCategories.rendered = () ->
   $(".color-picker").colorpicker()
-
-  Uploader.finished = (index, file) ->
-    console.log "This is the file"
-    console.log "uploaded: #{file.name}"
-    $('.uploaded-image').html = "<img src='#{file.name}' height=50 width=50>"

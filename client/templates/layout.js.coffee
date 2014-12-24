@@ -1,3 +1,5 @@
 Template.layout.helpers
   categories: -> Categories.find({})
-  logged_in: -> Meteor.user()
+  admin_user: ->
+    username = Meteor.user().username
+    if username == 'justinp' || username == 'sarahp' then true else false

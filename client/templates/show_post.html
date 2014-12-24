@@ -1,5 +1,5 @@
 <template name="showPost">
-  {{#if logged_in}}
+  {{#if admin_user}}
   <a class="edit-post-link align-right" href="/posts/{{id}}/edit">Edit Post</a>
   {{/if}}
   <div class="col-md-offset-1 col-md-1">

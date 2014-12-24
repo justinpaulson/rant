@@ -5,3 +5,7 @@ Template.showPost.helpers
   text: -> Session.get 'text'
   category_image: -> Session.get 'category_image'
   category_color: -> Session.get 'category_color'
+  admin_user: ->
+    username = Meteor.user().username
+    if username == 'justinp' || username == 'sarahp' then true else false
+
