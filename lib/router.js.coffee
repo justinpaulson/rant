@@ -16,12 +16,28 @@ Router.route '/posts/:_id',
       else
         Session.set 'id', result._id._str
         Session.set 'title', result.title
+        Session.set 'author', result.author
+        Session.set 'text', result.text
+        Session.set 'url', result.url
+        Session.set 'category_image', result.category_image
+        Session.set 'category_color', result.category_color
+  data: ->
+    url: Session.get 'url'
+    author: Session.get 'author'
+    title: Session.get 'title'
+Router.route '/posts/:_id/edit',
+  name: 'editPost',
+  waitOn: ->
+    Meteor.call "getPost", (new Meteor.Collection.ObjectID(@params._id)), (error, result) -> 
+      if error
+        console.log error
+      else
+        Session.set 'id', result._id
+        Session.set 'title', result.title
+        Session.set 'author', result.author
         Session.set 'text', result.text
         Session.set 'category_image', result.category_image
         Session.set 'category_color', result.category_color
-Router.route '/posts/:_id/edit',
-  name: 'editPost',
-  data: -> Posts.findOne(new Meteor.Collection.ObjectID(@params._id))
 Router.route '/:category',
   name: 'showCategory',
   waitOn: ->

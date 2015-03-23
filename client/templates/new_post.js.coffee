@@ -3,6 +3,7 @@ Template.newPost.events
     Posts.insert
       _id:  new Meteor.Collection.ObjectID(),
       title: $("[name='title']").val(),
+      author: $("[name='author']").val(),
       category: $("[name='category']").val(),
       text: $("[name='text']").val(),
       short_text: $("[name='text']").val(),
