@@ -41,7 +41,7 @@ if (Meteor.isServer) {
     var category;
     Posts.find({}).fetch().forEach(function (element, index, array) {
       category = Categories.findOne({name: element.category});
-      posts.push(_.extend(element, {url:'http://blog.rebil.co/posts/'+element._id._str, category_color: category.color, category_image: category.image}));
+      posts.push(_.extend(element, {url:'http://justinpaulson.com/posts/'+element._id._str, category_color: category.color, category_image: category.image}));
     });
     return posts;
   }});
@@ -51,7 +51,7 @@ if (Meteor.isServer) {
     var category;
     Posts.find({category: category}).fetch().forEach(function (element, index, array) {
       category = Categories.findOne({name: element.category});
-      posts.push(_.extend(element, {url:'http://blog.rebil.co/posts/'+element._id._str, category_color: category.color, category_image: category.image}));
+      posts.push(_.extend(element, {url:'http://justinpaulson.com/posts/'+element._id._str, category_color: category.color, category_image: category.image}));
     });
     return posts;
   }});
@@ -60,6 +60,6 @@ if (Meteor.isServer) {
     var post, category;
     post = Posts.findOne(id);
     category = Categories.findOne({name: post.category});
-    return _.extend(post, {url:'http://blog.rebil.co/posts/'+id, category_color: category.color, category_image: category.image});
+    return _.extend(post, {url:'http://justinpaulson.com/posts/'+id, category_color: category.color, category_image: category.image});
   }});
 }
