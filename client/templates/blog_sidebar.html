@@ -1,0 +1,17 @@
+<template name="blogSidebar">
+  <ul class="sidebar-nav">
+    {{#if admin_user}}
+    <li>
+      <a class="new-post-link" href="/blog/posts/new">New Post</a>
+    </li>
+    <li>
+      <a class="new-category-link" href="/blog/categories/edit">Edit Categories</a>
+    </li>
+    {{/if}}
+    {{#each categories}}
+    <li class="sidebar-link" id="{{this.name}}">
+      <a href="/blog/{{this.name}}">{{this.name}}</a>
+    </li>
+    {{/each}}
+  </ul>
+</template>

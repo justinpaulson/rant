@@ -43,11 +43,24 @@ body {
     margin-right: -150px;
 }
 
+.navbar-header a img{
+    height: 50px;
+}
+
+.navbar-brand {
+    padding-top: 10px;
+}
+
+.navbar-link {
+    font-size: 20px;
+}
+
 /* Sidebar Styles */
 
 .sidebar-nav {
     position: absolute;
-    top: 0;
+    top: 100px;
+    left: 0px;
     width: 150px;
     margin: 0;
     padding: 0;
@@ -60,20 +73,20 @@ body {
 }
 
 .sidebar-nav li.active a {
-    background: rgba(255,255,255,0.2);
-    color: #eee;
+    background: rgba(200,200,200,0.2);
+    color: #888888;
 }
 
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #BBBBBB;
+    color: #222222;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.4);
+    color: #888888;
+    background: rgba(200,200,200,0.4);
 }
 
 .sidebar-nav li a:active,
@@ -82,9 +95,13 @@ body {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
+    height: 150px;
     font-size: 18px;
     line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a img {
+    padding-top: 25px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -94,6 +111,11 @@ body {
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
+}
+
+.sidebar-nav > .sidebar-title {
+    color: #EEEEEE;
+    text-indent: 10px;
 }
 
 @media(min-width:768px) {
@@ -114,7 +136,7 @@ body {
     }
 
     #page-content-wrapper {
-        padding: 20px;
+        padding: 100px;
     }
 
     #wrapper.toggled #page-content-wrapper {

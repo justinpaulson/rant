@@ -1,6 +1,7 @@
 <template name="showPost">
+  {{> blogSidebar}}
   {{#if admin_user}}
-  <a class="edit-post-link align-right" href="/posts/{{id}}/edit">Edit Post</a>
+  <a class="pull-right edit-post-link align-right" href="/posts/{{id}}/edit">Edit Post</a>
   {{/if}}
   <div class="col-md-offset-1 col-md-1">
     <img src="{{category_image}}" align="left" height="50" width="50">

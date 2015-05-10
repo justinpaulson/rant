@@ -1,36 +1,31 @@
 <template name="layout">
-  <div id="wrapper">
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-            <a href="/">
-                Rant
-            </a>
-        </li>
-        {{#each categories}}
-        <li id="{{this.name}}">
-          <a href="/{{this.name}}">{{this.name}}</a>
-        </li>
-        {{/each}}
-      </ul>
-    </div>
-    <div id="page-content-wrapper">
-      <div class="navbar">
-        <ul class="nav navbar-nav navbar-right">
-          {{#if admin_user}}
-          <li>
-            <a class="new-post-link" href="/posts/new">New Post</a>
-          </li>
-          <li>
-            <a class="new-category-link" href="/categories/edit">Edit Categories</a>
-          </li>
-          {{/if}}
-          
-        </ul>
-      </div>
-      <div id="main" class="row-fluid">
-        {{> yield}}
-      </div>
+  <div class="navbar-header">
+    <a class= "navbar-brand" href="/">
+      <img src="/headshot.png">
+    </a>
   </div>
+  <div class="collapse navbar-collapse navbar-right">
+    <ul class="nav navbar-nav">
+      <li class="navbar-link" id="projects-link">
+        <a href="/work/projects">
+          Projects
+        </a>
+      </li>
+      <li class="navbar-link" id="resume-link">
+        <a href="/work/resume">
+          Resume
+        </a>
+      </li>
+      <li class="navbar-link" id="blog-link">
+        <a href="/blog">
+          Blog
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div id="page-content-wrapper">
+    <div id="main" class="row-fluid">
+      {{> yield}}
+    </div>
   </div>
 </template>
