@@ -1,20 +1,532 @@
 <template name="resume">
   <div class="resume-header">
-    <h1>Resume</h1>
+    <h1>Justin Paulson</h1>
   </div>
-  <div class="container info-container">
+  <div class="info-container">
+    <h4>918-949-5246</h4>
+    <a href="mailto:justinapaulson@gmail.com"><h4>justinapaulson@gmail.com</h4></a>
+    <h4>Tulsa, OK</h4>
+    I love to develop products from inception all the way through to production.  I have experience in a number of different programming languages and team structures.  I can manage a team or I can code as a member.  Don't hestitate to give me a call or send me an e-mail, I'd love to hear what you are working on and how I can help.  This resume is a work in progress, I just couldn't find my under construction gif.
   </div>
-  <div class="container timeline-container">
-    <div class="container work-container">
+  <div class="work-container row">
+    <h2>Work</h2>
+    <div id="employer-logos">
+      <div class="employer-logo">
+        <img class="employer-logo-image" src="/gqti-logo.png" width="100">
+        <img name="gqti" class="employer-logo-image-highlighted" src="/gqti-logo-highlighted.png" width="100" style="display:none;">
+      </div>
+      <div class="employer-logo">
+        <img class="employer-logo-image" src="/mizzou-logo.png" width="50">
+        <img name="mizzou" class="employer-logo-image-highlighted" src="/mizzou-logo-highlighted.png" width="50" style="display:none;">
+      </div>
+      <div class="employer-logo">
+        <img class="employer-logo-image" src="/epm-logo.png" width="100">
+        <img name="epm" class="employer-logo-image-highlighted" src="/epm-logo-highlighted.png" width="100" style="display:none;">
+      </div>
+      <div class="employer-logo">
+        <img class="employer-logo-image" src="/aaon-logo.png" width="100">
+        <img name="aaon" class="employer-logo-image-highlighted" src="/aaon-logo-highlighted.png" width="100" style="display:none;">
+      </div>
+      <div class="employer-logo">
+        <img class="employer-logo-image" src="/waterfield-logo.png" width="100" style="display:none;">
+        <img name="waterfield" class="employer-logo-image-highlighted active" src="/waterfield-logo-highlighted.png" width="100">
+      </div>
     </div>
-    <div class="container timeline">
-      2000 - 2005 - 2010 - 2015
+    <div class="employer-details col-md-12" id="gqti" style="display:none;">
+      <a href="http://www.gqti.com"><h3>Goodrich Quality Theaters</h3></a>
+      <h4>General Manager, 2004-2006</h4>
+      <div class="employer-details-location">
+        <img src="/jefferson_city.png" width="100%">
+        Jefferson City, MO
+      </div>
+      <div class="employer-details-text">
+        <ul>
+          <li>
+            Controlled costs on payroll maintenance and other daily operations.
+          </li>
+          <li>
+            Achieved the largest commission bonus of any General Manager, based on cost and customer satisfaction.
+          </li>
+          <li>
+            Improved the quality of the film presentations by over 80%.
+          </li>
+          <li>
+            Staffed and Trained employees on theater operations and customer service interactions.
+          </li>
+          <li>
+            Scheduled films with emphasis on payroll control and revenue expectations.
+          </li>
+        </ul>
+      </div>
+      <div class="employer-details-skills">
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Training
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:30%">30%</div>
+            <div class="skill-empty" style="width:70%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Maintenance
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:30%">30%</div>
+            <div class="skill-empty" style="width:70%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Staffing
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:15%">15%</div>
+            <div class="skill-empty" style="width:85%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Scheduling
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:15%">15%</div>
+            <div class="skill-empty" style="width:85%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Cust. Service
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:10%">10%</div>
+            <div class="skill-empty" style="width:90%"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="container education-container">
+    <div class="employer-details col-md-12" id="mizzou" style="display:none;">
+      <a href="http://www.missouri.edu"><h3>University of Missouri</h3></a>
+      <h4>Research Technician III, 2007-2008</h4>
+      <div class="employer-details-location">
+        <img src="/columbia.png" width="100%">
+        Columbia, MO
+      </div>
+      <div class="employer-details-text">
+        <ul>
+          <li>
+            Maintained high safety standards for facility operation.
+          </li>
+          <li>
+            Documented the photon absorption of SiC material using a number of lasers and photocells.
+          </li>
+          <li>
+            Used Brewster’s Angle to determine the refractive indices of the SiC material.
+          </li>
+        </ul>
+      </div>
+      <div class="employer-details-skills">
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Expirements
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:50%">50%</div>
+            <div class="skill-empty" style="width:50%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Measurements
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:30%">30%</div>
+            <div class="skill-empty" style="width:70%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Writing
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:20%">20%</div>
+            <div class="skill-empty" style="width:80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="employer-details col-md-12" id="epm" style="display:none;">
+      <a href="http://www.epmctc.com"><h3>EPM Inc.</h3></a>
+      <h4>Software Engineer, 2008-2010</h4>
+      <div class="employer-details-location">
+        <img src="/fulton.png" width="100%">
+        Fulton, MO
+      </div>
+      <div class="employer-details-text">
+        <ul>
+          <li>
+            Trained and supervised engineering interns.
+          </li>
+          <li>
+            Designed controls for many different types of heating and cooling units including freezers, boilers,  and chillers.
+          </li>
+          <li>
+            Identified problems with control systems and created and implemented solutions.
+          </li>
+          <li>
+            Traveled to sites to diagnose and correct problems with temperature controls.
+          </li>
+          <li>
+            Wrote controls on embedded systems using assembly code for microcontrollers.
+          </li>
+          <li>
+            Created web-based graphical user interfaces for control computers using PHP and SQL databases.
+          </li>
+          <li>
+            Proven ability to work with clients to diagnose problems and find solutions, maintaining customer satisfaction.
+          </li>
+        </ul>
+      </div>
+      <div class="employer-details-skills">
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Assembly
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:40%">40%</div>
+            <div class="skill-empty" style="width:60%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Graphics
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:20%">20%</div>
+            <div class="skill-empty" style="width:80%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Linux
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:15%">15%</div>
+            <div class="skill-empty" style="width:85%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Training
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:15%">15%</div>
+            <div class="skill-empty" style="width:85%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Javascript
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:10%">10%</div>
+            <div class="skill-empty" style="width:90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="employer-details col-md-12" id="aaon" style="display:none;">
+      <a href="http://www.aaon.com"><h3>AAON Inc.</h3></a>
+      <h4>Electrical Design Engineer, 2010-2013</h4>
+      <div class="employer-details-location">
+        <img src="/tulsa.png" width="100%">
+        Tulsa, OK
+      </div>
+      <div class="employer-details-text">
+        <ul>
+          <li>
+            Wrote control software for Tridium NiagaraAX based controllers for HVAC equipment ranging from 5 to 240 ton air handlers including custom NiagaraAX components written in Java.
+          </li>
+          <li>
+            Implemented a modal master program for the controller which could be easily configured to operate hundreds of different HVAC configurations, including a function that could configure the program automatically.
+          </li>
+          <li>
+            Wrote custom NiagaraAX components in Java.
+          </li>
+          <li>
+            Solitarily created an iOS application to interface controllers for access to setpoints, IOs, alarms, network configuration, and histories from idea to release, as well as a proof for an Android application.
+          </li>
+          <li>
+            Coordinated HVAC orders with applications engineers and sales reps to produce sequences of operation and provide customized solutions to customers.
+          </li>
+          <li>
+            Created documentation for controls including an engineering catalog detailing the standard sequence of operation and optional features and a user’s manual describing multiple ways to interface the controller and start up HVAC equipment.
+          </li>
+          <li>
+            Designed building management system to integrate controls of all the AAON factory HVAC equipment.
+          </li>
+          <li>
+            Designed custom iOS application for CEO’s home which integrated four HVAC units and a boiler loop into a simple to use interface.
+          </li>
+          <li>
+            Handled customer service calls to support custom HVAC controls.
+
+          </li>
+        </ul>
+      </div>
+      <div class="employer-details-skills">
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Niagara AX
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:40%">40%</div>
+            <div class="skill-empty" style="width:60%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Java
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:20%">20%</div>
+            <div class="skill-empty" style="width:80%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Objective C (iOS)
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:15%">15%</div>
+            <div class="skill-empty" style="width:85%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Documentation
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:15%">15%</div>
+            <div class="skill-empty" style="width:85%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Cust. Service
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:10%">10%</div>
+            <div class="skill-empty" style="width:90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="employer-details col-md-12" id="waterfield">
+      <a href="http://www.waterfieldenergysoftware.com"><h3>Waterfield Energy</h3></a>
+      <h4>Senior Developer and Team Lead, 2013-2015</h4>
+      <div class="employer-details-location">
+        <img src="/tulsa.png" width="100%">
+        Tulsa, OK
+      </div>
+      <div class="employer-details-text">
+        <ul>
+          <li>
+            Created an on-boarding program that improved the amount of time needed for new developers to reach full productivity by 50%.
+          </li>
+          <li>
+            Developed a developer handbook with documentation, UI guides, links to educational materials, and programming style guides using Jekyll.
+          </li>
+          <li>
+            Coded dozens of features including context-based search, a modal editing framework, computational processes written in go, and many more.
+          </li>
+          <li>
+            Created two single-page backbone applications including the front-end javascript and the server side ruby on rails code as a JSON API.
+          </li>
+          <li>
+            Created technical documentation for features I implemented.
+          </li>
+          <li>
+            Trained multiple developers using the on-boarding program I created.
+          </li>
+          <li>
+            Managed 6 off-shore developers in Costa Rica.
+          </li>
+          <li>
+            Presented and organized weekly Lunch and Learns.
+          </li>
+        </ul>
+      </div>
+      <div class="employer-details-skills">
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Ruby on Rails
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:30%">30%</div>
+            <div class="skill-empty" style="width:70%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Javascript
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:30%">30%</div>
+            <div class="skill-empty" style="width:70%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Go
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:20%">20%</div>
+            <div class="skill-empty" style="width:80%"></div>
+          </div>
+        </div>
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Training
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:20%">20%</div>
+            <div class="skill-empty" style="width:80%"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="container skills-container">
+  <div class="education-container row">
+    <h2>Education</h2>
+    <div id="education-logos">
+      <div class="education-logo">
+        <img class="education-logo-image" src="/iit-logo.png" width="50">
+        <img name="iit" class="education-logo-image-highlighted" src="/iit-logo-highlighted.png" width="50" style="display:none;">
+      </div>
+      <div class="education-logo">
+        <img class="education-logo-image" src="/uiuc-logo.png" width="30">
+        <img name="uiuc" class="education-logo-image-highlighted" src="/uiuc-logo-highlighted.png" width="30" style="display:none;">
+      </div>
+      <div class="education-logo">
+        <img class="education-logo-image" src="/mizzou-logo.png" width="50" style="display:none;">
+        <img name="mu" class="education-logo-image-highlighted active" src="/mizzou-logo-highlighted.png" width="50">
+      </div>
+    </div>
+    <div class="education-details col-md-12" id="iit" style="display:none;">
+      <a href="http://www.iit.edu"><h3>Illinois Institute of Technology</h3></a>
+      <h4>Computer Science and Electrical Engineering, 2000-2002</h4>
+      <div class="employer-details-location">
+        <img src="/chicago.png" width="100%">
+        Chicago, IL
+      </div>
+      <div class="employer-details-text">
+        <ul>
+          <li>
+            Camras-NEXT scholarship
+          </li>
+          <li>
+            Studied Computer Science and Electrical Engineering.
+          </li>
+        </ul>
+      </div>
+      <div class="employer-details-skills">
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Completed
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:50%">50%</div>
+            <div class="skill-empty" style="width:50%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="education-details col-md-12" id="uiuc" style="display:none;">
+      <a href="http://www.uiuc.edu"><h3>University of Illinois - Urbana Champaign</h3></a>
+      <h4>Computer Science and Philosophy, 2002-2004</h4>
+      <div class="employer-details-location">
+        <img src="/champaign.png" width="100%">
+        Champaign-Urbana, IL
+      </div>
+      <div class="employer-details-text">
+        <ul>
+          <li>
+            Studied philosophy and computer science.
+          </li>
+        </ul>
+      </div>
+      <div class="employer-details-skills">
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Completed
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full" style="width:50%">50%</div>
+            <div class="skill-empty" style="width:50%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="education-details col-md-12" id="mu">
+      <a href="http://www.missouri.edu"><h3>University of Missouri</h3></a>
+      <h4>Electrical and Computer Engineering, 2006-2008</h4>
+      <div class="employer-details-location">
+        <img src="/columbia.png" width="100%">
+        Columbia, MO
+      </div>
+      <div class="employer-details-text">
+        <ul>
+          <li>
+            Graduated with a B.S. in Computer Engineering, a B.S. in Electrical Engineering, and a minor in Philosophy with Honors.
+          </li>
+          <li>
+            My senior project was the creation of wifi-enabled parking meters that can be monitored and paid for from either an iPhone application or a website.
+          </li>
+        </ul>
+      </div>
+      <div class="employer-details-skills">
+        <div class="single-skill-container">
+          <div class="skill-title">
+            Completed
+          </div>
+          <div class="skill-progress">
+            <div class="skill-full-100" style="width:100%">100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container references-container">
+  <div class="organizations-container row">
+    <h2>Organizations</h2>
+    <div class="organization-logo">
+      <div class="organization-logo-image">
+        <a href="http://www.mensa.org"><img src="/mensa-logo.png" width="100" border="0"></a>
+      </div>
+      <p>Mensa</p>
+    </div>
+    <div class="organization-logo">
+      <div class="organization-logo-image">
+        <a href="http://www.usatriathlon.org"><img src="/usa-triathlon-logo.png" width="100" border="0"></a>
+      </div>
+      <p>USA Triathlon</p>
+    </div>
+    <div class="organization-logo">
+      <div class="organization-logo-image">
+        <a href="http://www.marathonmaniacs.com"><img src="/marathon-maniacs-logo.png" width="100" border="0"></a>
+      </div>
+      <p>Marathon Maniacs</p>
+    </div>
+    <div class="organization-logo">
+      <div class="organization-logo-image">
+        <a href="http://www.ieee.org"><img src="/ieee-logo.png" width="100" border="0"></a>
+      </div>
+      <p>IEEE</p>
+    </div>
+  </div>
+  <div class="references-container row">
+    <h2>References</h2>
+    Provided Upon Request
   </div>
 </template>

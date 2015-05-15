@@ -154,5 +154,99 @@ body {
 }
 
 .post-body {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.employer-logo {
+  text-align: center;
+  float: left;
+  width: 20%;
+}
+
+.employer-details-location {
+  float: left;
+  width: 10%;
+  text-align: center;
+}
+
+.employer-details-text {
+  float: left;
+  width: 60%;
+}
+
+.employer-details-skills {
+  float: left;
+  width: 30%;
+}
+
+.single-skill-container {
+  height: 40px;
+  width: 100%;
+  text-align: right;
+}
+
+.skill-title {
+  float: left;
+  width: 40%;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.skill-progress {
+  float: left;
+  width: 60%;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.skill-full {
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  float: left;
+  height: 30px;
+  background-color: #508C97;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.skill-full-100 {
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  float: left;
+  height: 30px;
+  background-color: #508C97;
+  border-radius: 15px;
+}
+
+.skill-empty {
+  float: left;
+  height: 30px;
+  background-color: #DDDDDD;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.education-logo {
+  text-align: center;
+  float: left;
+  width: 33.33%;
+}
+
+.organization-logo {
+  text-align: center;
+  float: left;
+  width: 25%;
+}
+
+.organization-logo-image {
+  height: 100px;
+}
+
+.work-container,
+.education-container,
+.organizations-container,
+.references-container {
+  margin-top: 50px;
 }
