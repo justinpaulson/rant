@@ -1,6 +1,8 @@
 <template name="showCategory">
   {{> blogSidebar}}
-  {{#each posts}}
-    {{> postPreview}}
-  {{/each}}
+  <div id="blog-wrapper">
+    {{#each posts}}
+      {{> postPreview}}
+    {{/each}}
+  </div>
 </template>

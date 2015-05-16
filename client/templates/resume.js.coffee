@@ -22,6 +22,7 @@ Template.resume.rendered = () ->
     name = $(e.target).siblings('.employer-logo-image-highlighted').attr 'name'
     $('.employer-details').hide()
     $("##{name}").show()
+    $('.employer.bg-image').attr 'src', "/#{name}-background.png"
 
   $('.employer-logo-image-highlighted').click (e) ->
     $('.employer-logo-image-highlighted').removeClass('active')
@@ -33,6 +34,7 @@ Template.resume.rendered = () ->
     name = $(e.target).attr 'name'
     $('.employer-details').hide()
     $("##{name}").show()
+    $('.employer.bg-image').attr 'src', "/#{name}-background.png"
 
   $('.education-logo-image').mouseenter (e) ->
     $(e.target).hide()
@@ -53,6 +55,7 @@ Template.resume.rendered = () ->
     name = $(e.target).siblings('.education-logo-image-highlighted').attr 'name'
     $('.education-details').hide()
     $("##{name}").show()
+    $('.education.bg-image').attr 'src', "/#{name}-background.png"
 
   $('.education-logo-image-highlighted').click (e) ->
     $('.education-logo-image-highlighted').removeClass('active')
@@ -64,3 +67,4 @@ Template.resume.rendered = () ->
     name = $(e.target).attr 'name'
     $('.education-details').hide()
     $("##{name}").show()
+    $('.education.bg-image').attr 'src', "/#{name}-background.png"

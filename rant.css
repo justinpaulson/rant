@@ -2,6 +2,11 @@ body {
     background: ghostwhite;
 }
 
+@font-face {
+  font-family: "Bitwise";
+  src: url("/Bitwise.ttf");
+}
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -35,12 +40,14 @@ body {
 
 #page-content-wrapper {
     width: 100%;
-    padding: 15px;
 }
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -150px;
+}
+
+#blog-wrapper {
+  padding: 100px;
 }
 
 .navbar-header a img{
@@ -53,6 +60,10 @@ body {
 
 .navbar-link {
     font-size: 20px;
+}
+
+.navbar-right {
+  margin-right: 0px;
 }
 
 /* Sidebar Styles */
@@ -118,33 +129,6 @@ body {
     text-indent: 10px;
 }
 
-@media(min-width:768px) {
-    #wrapper {
-        padding-left: 150px;
-    }
-
-    #wrapper.toggled {
-        padding-left: 0;
-    }
-
-    #sidebar-wrapper {
-        width: 150px;
-    }
-
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
-    }
-
-    #page-content-wrapper {
-        padding: 100px;
-    }
-
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-    }
-}
-
 .colorpicker-hue {
     background-image: url("/hue.png");
 }
@@ -205,7 +189,7 @@ body {
   padding-top: 5px;
   float: left;
   height: 30px;
-  background-color: #508C97;
+  background-color: #4F6E0B;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -216,14 +200,14 @@ body {
   padding-top: 5px;
   float: left;
   height: 30px;
-  background-color: #508C97;
+  background-color: #4F6E0B;
   border-radius: 15px;
 }
 
 .skill-empty {
   float: left;
   height: 30px;
-  background-color: #DDDDDD;
+  background-color: #EEEEEE;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -244,9 +228,98 @@ body {
   height: 100px;
 }
 
+.info-container,
 .work-container,
 .education-container,
 .organizations-container,
 .references-container {
-  margin-top: 50px;
+  width: 100%;
+  background-position: right top;
+  background-size: 100% 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.resume-header {
+  padding: 100px 0px 0px 50px;
+}
+
+.info-container {
+  height: 200px;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.work-container {
+  height: 500px;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: rgba(85,140,137,0.4);
+}
+
+.education-container {
+  height: 500px;
+  position: relative;
+  overflow-y: hidden;
+  background-color: rgba(217,133,59,0.4);
+}
+
+.organizations-container {
+  height: 270px;
+  position: relative;
+  overflow-y: hidden;
+  padding-top: 80px;
+  background-color: rgba(116,175,173,0.4);
+}
+
+.references-container {
+  padding-top: 40px;
+  margin-bottom: 40px;
+  height: auto;
+}
+
+img.bg-image {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .2;
+}
+
+.single-reference {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.single-reference img {
+  text-align: center;
+  height: 150px;
+  border-radius: 75px;
+}
+
+.reference-image {
+  float: left;
+  width: 20%;
+}
+
+.reference-text {
+  float: left;
+  width: 80%;
+}
+
+.reference-quote {
+  width: 100%;
+  font-size: 24px;
+}
+
+.reference-name {
+  padding-top: 10px;
+  width: 100%;
+  font-size: 20px;
 }
