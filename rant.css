@@ -295,6 +295,7 @@ img.bg-image {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  height: 200px;
 }
 
 .single-reference img {
