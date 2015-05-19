@@ -10,16 +10,16 @@ Template.editPost.events
         text: $("[name='text']").val(),
         short_text: $("[name='text']").val()
 
-    window.location = "/posts/#{@_id._str}"
+    window.location = "/blog/posts/#{@_id._str}"
     
   "click #delete": (e) ->
     if confirm('Are you sure you want to delete this post?')
       Posts.remove @_id
-      window.location = "/"
+      window.location = "/blog"
 
 
   "click #cancel": (e) ->
-    window.location = "/posts/#{@_id._str}"
+    window.location = "/blog/posts/#{@_id._str}"
 
 Template.editPost.helpers
   logged_in: -> Meteor.user()
