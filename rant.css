@@ -156,12 +156,10 @@ body {
 .employer-details:before,
 .education-details:before {
   bottom: 100%;
-  left: 50%;
   border: solid transparent;
   content: " ";
   height: 0;
   width: 0;
-  left: 90%;
   position: absolute;
   pointer-events: none;
   border-color: rgba(255, 255, 255, 0);
@@ -170,11 +168,35 @@ body {
   margin-left: -30px;
 }
 
-.employer-details:before {
+.employer-details#gqti:before {
+  left: 10%;
+}
+
+.employer-details#mizzou:before {
+  left: 30%;
+}
+
+.employer-details#epm:before {
+  left: 50%;
+}
+
+.employer-details#aaon:before {
+  left: 70%;
+}
+
+.employer-details#waterfield:before {
   left: 90%;
 }
 
-.education-details:before {
+.education-details#iit:before {
+  left: 16.5%;
+}
+
+.education-details#uiuc:before {
+  left: 50%;
+}
+
+.education-details#mu:before {
   left: 83.5%;
 }
 

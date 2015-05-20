@@ -24,6 +24,13 @@ Template.resume.rendered = () ->
     $("##{name}").show()
     $(".employer.bg-image").hide()
     $(".employer.bg-image##{name}-bg").show()
+    $(".employer-details").removeClass "gqti"
+    $(".employer-details").removeClass "mizzou"
+    $(".employer-details").removeClass "epm"
+    $(".employer-details").removeClass "aaon"
+    $(".employer-details").removeClass "waterfield"
+    $(".employer-details").addClass name
+
 
   $('.employer-logo-image-highlighted').click (e) ->
     $('.employer-logo-image-highlighted').removeClass('active')
@@ -37,6 +44,12 @@ Template.resume.rendered = () ->
     $("##{name}").show()
     $(".employer.bg-image").hide()
     $(".employer.bg-image##{name}-bg").show()
+    $(".employer-details").removeClass "gqti"
+    $(".employer-details").removeClass "mizzou"
+    $(".employer-details").removeClass "epm"
+    $(".employer-details").removeClass "aaon"
+    $(".employer-details").removeClass "waterfield"
+    $(".employer-details").addClass name
 
   $('.education-logo-image').mouseenter (e) ->
     $(e.target).hide()
@@ -59,6 +72,10 @@ Template.resume.rendered = () ->
     $("##{name}").show()
     $(".education.bg-image").hide()
     $(".education.bg-image##{name}-bg").show()
+    $(".education-details").removeClass "iit"
+    $(".education-details").removeClass "uiuc"
+    $(".education-details").removeClass "mu"
+    $(".education-details").addClass name
 
   $('.education-logo-image-highlighted').click (e) ->
     $('.education-logo-image-highlighted').removeClass('active')
@@ -72,3 +89,7 @@ Template.resume.rendered = () ->
     $("##{name}").show()
     $(".education.bg-image").hide()
     $(".education.bg-image##{name}-bg").show()
+    $(".education-details").removeClass "iit"
+    $(".education-details").removeClass "uiuc"
+    $(".education-details").removeClass "mu"
+    $(".education-details").addClass name
