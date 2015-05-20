@@ -147,6 +147,37 @@ body {
   width: 20%;
 }
 
+.employer-details,
+.education-details {
+  background-color: rgba(255,255,255,0.3);
+  margin-top: 40px;
+}
+
+.employer-details:before,
+.education-details:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  left: 90%;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+.employer-details:before {
+  left: 90%;
+}
+
+.education-details:before {
+  left: 83.5%;
+}
+
 .employer-details-location {
   float: left;
   width: 10%;
