@@ -62,7 +62,7 @@ Router.route '/blog/:category',
       else 
         Session.set 'posts', result
         $("li##{@params.category}").addClass 'active'
-Router.route '/work/resume', 
+Router.route '/work/about', 
   name: 'resume',
   waitOn: ->
     $('li.navbar-link').removeClass 'active'

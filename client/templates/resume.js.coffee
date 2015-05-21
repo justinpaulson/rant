@@ -22,6 +22,8 @@ Template.resume.rendered = () ->
     name = $(e.target).siblings('.employer-logo-image-highlighted').attr 'name'
     $('.employer-details').hide()
     $("##{name}").show()
+    $(".employer.timeline-color-img").hide()
+    $(".employer.timeline-color-img##{name}-timeline").show()
     $(".employer.bg-image").hide()
     $(".employer.bg-image##{name}-bg").show()
     $(".employer-details").removeClass "gqti"
@@ -42,6 +44,8 @@ Template.resume.rendered = () ->
     name = $(e.target).attr 'name'
     $('.employer-details').hide()
     $("##{name}").show()
+    $(".employer.timeline-color-img").hide()
+    $(".employer.timeline-color-img##{name}-timeline").show()
     $(".employer.bg-image").hide()
     $(".employer.bg-image##{name}-bg").show()
     $(".employer-details").removeClass "gqti"
@@ -70,6 +74,8 @@ Template.resume.rendered = () ->
     name = $(e.target).siblings('.education-logo-image-highlighted').attr 'name'
     $('.education-details').hide()
     $("##{name}").show()
+    $(".education.timeline-color-img").hide()
+    $(".education.timeline-color-img##{name}-timeline").show()
     $(".education.bg-image").hide()
     $(".education.bg-image##{name}-bg").show()
     $(".education-details").removeClass "iit"
@@ -87,6 +93,8 @@ Template.resume.rendered = () ->
     name = $(e.target).attr 'name'
     $('.education-details').hide()
     $("##{name}").show()
+    $(".education.timeline-color-img").hide()
+    $(".education.timeline-color-img##{name}-timeline").show()
     $(".education.bg-image").hide()
     $(".education.bg-image##{name}-bg").show()
     $(".education-details").removeClass "iit"

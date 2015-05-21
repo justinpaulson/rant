@@ -146,6 +146,7 @@ body {
   background-color: #60b974;
   color: white;
   border-radius: 0px;
+  outline: none;
 }
 
 .pdf-btn:hover,
@@ -154,6 +155,7 @@ body {
   margin-top: 20px;
   background-color: #409954;
   color: white;
+  outline: none;
 }
 
 .employer-logo {
@@ -224,6 +226,12 @@ body {
 .employer-details-text {
   float: left;
   width: 60%;
+}
+
+.employer-details-text ul li,
+.education-details-text ul li {
+  list-style: none;
+  padding-top: 2px;
 }
 
 .employer-details-skills {
@@ -307,6 +315,29 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
+}
+
+.timeline-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 0;
+}
+
+.timeline-img {
+  position: absolute;
+  z-index: 100;
+  top: -80px;
+  left: 0;
+  width: 100%;
+}
+
+.timeline-color-img {
+  position: absolute;
+  z-index: 101;
+  top: -80px;
+  left: 0;
+  width: 100%;
 }
 
 .resume-header {
