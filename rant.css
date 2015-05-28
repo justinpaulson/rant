@@ -156,9 +156,12 @@ body {
 .pdf-btn:focus,
 .pdf-btn:active {
   margin-top: 20px;
-  background-color: #409954;
   color: white;
-  outline: none;
+  outline: none !important;
+}
+
+.pdf-btn:active {
+  background-color: #409954;
 }
 
 .twitter-icon a,
