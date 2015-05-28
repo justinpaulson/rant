@@ -142,7 +142,9 @@ body {
 }
 
 .pdf-btn {
+  width: 250px;
   margin-top: 20px;
+  margin-right: 80px;
   background-color: #60b974;
   color: white;
   border-radius: 0px;
@@ -158,25 +160,18 @@ body {
   outline: none;
 }
 
-.twitter-icon a {
+.twitter-icon a,
+.github-icon a,
+.linkedin-icon a,
+.email-icon a {
   font-size: 40px;
   text-decoration: none;
   color: #888888;
   margin-left: 30px;
 }
 
-.github-icon a {
-  font-size: 40px;
-  text-decoration: none;
-  color: #888888;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.linkedin-icon a {
-  font-size: 40px;
-  text-decoration: none;
-  color: #888888;
+.social-icons {
+  margin-right: 50px;
 }
 
 .twitter-icon a:hover {
@@ -192,6 +187,11 @@ body {
 .linkedin-icon a:hover {
   text-decoration: none;
   color: #0077B5;
+}
+
+.email-icon a:hover {
+  text-decoration: none;
+  color: #60b974;
 }
 
 .employer-logo {
@@ -491,7 +491,8 @@ body {
 }
 
 .info-container {
-  height: 300px;
+  padding-top: 0px;
+  height: 220px;
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
