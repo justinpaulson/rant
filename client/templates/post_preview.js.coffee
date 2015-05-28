@@ -1,2 +1,2 @@
 Template.postPreview.helpers
-  createdAtFormatted: -> moment(Session.get('createdAt')).format('MMMM Do YYYY')
+  createdAtFormatted: -> moment(this.createdAt).format('MMMM Do YYYY')
