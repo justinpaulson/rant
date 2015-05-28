@@ -166,6 +166,13 @@ body {
 
 .employer-details,
 .education-details {
+  width:100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  box-sizing: border-box;
   background-color: rgba(255,255,255,0.3);
   margin-top: 40px;
 }
@@ -242,24 +249,84 @@ body {
 .single-skill-container {
   height: 40px;
   width: 100%;
-  text-align: right;
+  text-align: left;
+  float: left;
+}
+
+.skill-legend-1 {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #60b974;
+  border: 1px white solid;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.skill-legend-2 {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #ffb800;
+  border: 1px white solid;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.skill-legend-3 {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #508c97;
+  border: 1px white solid;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.skill-legend-4 {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #b0723d;
+  border: 1px white solid;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.skill-legend-last {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #e30017;
+  border: 1px white solid;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
 .skill-title {
   float: left;
-  width: 40%;
   padding-right: 10px;
   margin-top: 10px;
+  margin-left: 10px;
 }
 
 .skill-progress {
   float: left;
-  width: 60%;
-  height: 30px;
+  width: 100%;
+  height: 50px;
   margin-top: 5px;
+  padding-left: 10px;
 }
 
-.skill-full {
+.skill-1 {
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  border-left: 1px white solid;
   color: white;
   text-align: center;
   padding-top: 5px;
@@ -270,6 +337,53 @@ body {
   border-top-left-radius: 15px;
 }
 
+.skill-2 {
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  float: left;
+  height: 30px;
+  background-color: #ffb800;
+}
+
+.skill-3 {
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  float: left;
+  height: 30px;
+  background-color: #508c97;
+}
+
+.skill-4 {
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  float: left;
+  height: 30px;
+  background-color: #b0723d;
+}
+
+.skill-last {
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  border-right: 1px white solid;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  float: left;
+  height: 30px;
+  background-color: #e30017;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 .skill-full-100 {
   color: white;
   text-align: center;
@@ -278,14 +392,6 @@ body {
   height: 30px;
   background-color: #60b974;
   border-radius: 15px;
-}
-
-.skill-empty {
-  float: left;
-  height: 30px;
-  background-color: #EEEEEE;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
 .education-logo {
@@ -345,7 +451,7 @@ body {
 }
 
 .info-container {
-  height: 200px;
+  height: 250px;
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
