@@ -4,8 +4,9 @@
       {{> categorySidebar}}
     </div>
     <div class="col-md-6 post-body" style="border-left: 2px solid {{category_color}};">
-      <h4><a class="post-title" href="{{url}}">{{title}}</a></h4>
-      <h5>{{author}}</h5>
+      <h3><a class="post-title" href="{{url}}">{{title}}</a></h3>
+      <h4>{{author}}</h4>
+      <h5>{{createdAtFormatted}}</h5>
       <div>
         {{#markdown}}{{short_text}}{{/markdown}}
       </div>

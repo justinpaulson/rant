@@ -28,6 +28,7 @@ Router.route '/blog/posts/:_id',
         Session.set 'author', result.author
         Session.set 'text', result.text
         Session.set 'url', result.url
+        Session.set 'createdAt', result.createdAt
         Session.set 'category_image', result.category_image
         Session.set 'category_color', result.category_color
         $("li##{result.category}").addClass 'active'
@@ -48,6 +49,7 @@ Router.route '/blog/posts/:_id/edit',
         Session.set 'title', result.title
         Session.set 'author', result.author
         Session.set 'text', result.text
+        Session.set 'createdAt', result.createdAt
         Session.set 'category_image', result.category_image
         Session.set 'category_color', result.category_color
         $("li##{result.category}").addClass 'active'
