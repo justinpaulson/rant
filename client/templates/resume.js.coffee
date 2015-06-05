@@ -3,6 +3,8 @@ Template.resume.events
 Template.resume.helpers
 
 Template.resume.rendered = () ->
+  mixpanel.track "About Viewed"
+    
   $('.employer-logo-image').mouseenter (e) ->
     $(e.target).hide()
     $(e.target).siblings('.employer-logo-image-highlighted').show()

@@ -8,3 +8,6 @@ Template.allPosts.created = ->
       console.log error
     else 
       Session.set 'posts', result
+
+Template.allPosts.rendered = () ->
+  mixpanel.track "Blog Viewed"

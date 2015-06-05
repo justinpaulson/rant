@@ -9,7 +9,6 @@ Router.route '/blog', name: 'allPosts',
     $('li.navbar-link').removeClass 'active'
     $('li#blog-link').addClass 'active'
     $("li.sidebar-link").removeClass 'active'
-    mixpanel.track "Blog Viewed"
 Router.route '/blog/posts/new', name: 'newPost',
   waitOn: ->
     $('li.navbar-link').removeClass 'active'
@@ -75,7 +74,6 @@ Router.route '/work/about',
   waitOn: ->
     $('li.navbar-link').removeClass 'active'
     $('li#resume-link').addClass 'active'
-    mixpanel.track "About Viewed"
 Router.route '/work/projects', 
   name: 'projects',
   waitOn: ->
