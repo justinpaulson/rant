@@ -223,12 +223,12 @@ body {
   width:100%;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 15px;
   float: left;
   position: relative;
   min-height: 1px;
   box-sizing: border-box;
   background-color: rgba(255,255,255,0.3);
-  margin-top: 40px;
 }
 
 .employer-details:before,
@@ -240,10 +240,26 @@ body {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-color: transparent;
   border-width: 30px;
   margin-left: -30px;
+  overflow-y: none;
+}
+
+.employer-details:before {
+  border-bottom-color: rgba(116, 175, 173, 0.2);
+}
+
+.education-details:before {
+  border-bottom-color: rgba(217, 133, 59, 0.2);
+}
+
+.employer-details {
+  background-color: rgba(116, 175, 173, 0.4);
+}
+
+.education-details {
+  background-color: rgba(217, 133, 59, 0.4);
 }
 
 .employer-details#gqti:before {
@@ -472,8 +488,6 @@ body {
   width: 100%;
   background-position: right top;
   background-size: 100% 100%;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-top: 20px;
 }
 
@@ -481,13 +495,14 @@ body {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 0;
+  overflow-y: auto;
+  background-color: rgba(206, 231, 231, 0.40);
 }
 
 .timeline-img {
-  position: absolute;
+  position: relative;
   z-index: 100;
-  top: -80px;
+  top: 0px;
   left: 0;
   width: 100%;
 }
@@ -495,7 +510,7 @@ body {
 .timeline-color-img {
   position: absolute;
   z-index: 101;
-  top: -80px;
+  top: 0px;
   left: 0;
   width: 100%;
 }
@@ -510,25 +525,43 @@ body {
 
 .info-container {
   padding-top: 0px;
-  height: 220px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 15px;
   position: relative;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
 .work-container {
-  height: 600px;
+  padding-top: 0px;
   position: relative;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
-  background-color: rgba(85,140,137,0.4);
 }
 
+.work-logos-container {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #cee7e7;
+}
+
+  /*background-color: #6da3a1;*/
+
 .education-container {
-  height: 500px;
+  padding-top: 0px;
   position: relative;
-  overflow-y: hidden;
-  background-color: rgba(217,133,59,0.4);
+  overflow-y: auto;
+}
+
+.education-logos-container {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #f2d8c1;
 }
 
 .organizations-container {
@@ -547,9 +580,9 @@ body {
 
 img.bg-image {
   min-width: 100%;
-  min-height: 100%;
+  height: 100%;
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0;
   z-index: -1;
   opacity: .2;
