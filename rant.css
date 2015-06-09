@@ -47,7 +47,7 @@ body {
 }
 
 #blog-wrapper {
-  padding: 100px;
+  padding: 100px 100px 100px 150px;
 }
 
 .navbar-header a img{
@@ -139,6 +139,14 @@ body {
 
 .post-body {
   padding-bottom: 40px;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: left;
+}
+
+.post-icon {
+  float: left;
+  margin-left: 15px;
 }
 
 .pdf-btn {

@@ -1,9 +1,9 @@
 <template name="postPreview">
-  <div class="post-preview row">
-    <div class="col-md-offset-1 col-md-1">
+  <div class="post-preview">
+    <div class="post-icon">
       {{> categorySidebar}}
     </div>
-    <div class="col-md-6 post-body" style="border-left: 2px solid {{category_color}};">
+    <div class="post-body" style="border-left: 2px solid {{category_color}};">
       <h3><a class="post-title" href="{{url}}">{{title}}</a></h3>
       <h4>{{author}}</h4>
       <h5>{{createdAtFormatted}}</h5>
