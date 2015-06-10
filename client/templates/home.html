@@ -1,7 +1,13 @@
 <template name="home">
-  <div id="blog-wrapper">
-    <h1>I am he as you are he as you are me</h1>
-    <h1>And we are all together</h1>
-    <h1>- The Beatles</h1>
+  <div class="home-quote">
+    I am he as you are he as you are me<br>
+    And we are all together<br>
+      - The Beatles
+  </div>
+  <div class="home-blogs">
+    <h3>Recent Posts</h3>
+    {{#each posts}}
+      {{> homeBlogPreview}}
+    {{/each}}
   </div>
 </template>

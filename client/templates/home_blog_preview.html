@@ -1,0 +1,9 @@
+<template name="homeBlogPreview">
+  <div class="home-blog-preview" style="border-left: 4px solid {{category_color}};">
+    <a class="home-blog-title" href="{{url}}">{{title}}</a>
+    {{createdAtFormatted}}
+    <a class="home-category-link" href="/blog/{{category}}">
+      <img class="home-category-icon" src="{{category_image}}" align="left" height="20" width="20">{{category}}
+    </a>
+  </div>
+</template>
