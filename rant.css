@@ -622,11 +622,11 @@ body {
 }
 
 .organizations-container {
-  height: 270px;
   position: relative;
-  overflow-y: hidden;
-  padding-top: 80px;
-  background-color: rgba(116,175,173,0.4);
+  overflow-y: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(200, 200, 200, 0.4);
 }
 
 .references-container {
