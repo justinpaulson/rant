@@ -553,7 +553,7 @@ body {
   text-align: center;
   width: 100%;
   overflow-y: auto;
-  background-color: rgba(206, 231, 231, 0.40);
+  background: linear-gradient(#cee7e7,#f2d8c1);
 }
 
 .timeline-img {

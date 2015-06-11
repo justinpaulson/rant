@@ -1,4 +1,13 @@
 {
+  "moves": {
+    "clientID": "KK0sfDVvCOm2i8Xz3DVABH8fhOvLA3us",
+    "secret": "9NkSoUxfcK8e8U20fp4zuno5_SRn6Prx94806KqtQYcrSjopd32oB2A5FvZm5o6U",
+    "authorization": "lML2QJdgBWFRVd4R7wBR6VBaYmxWj5AoIZU2E8U3D8g40C3c9rJ15rtpKp5RJsje"
+  }
+  "spotify": {
+    "clientID": "67c5ada932d341e196abe4803a89cf47",
+    "secret": "7948f68738d04d18bf71057a9f977e26"
+  }
   "public": {
     "analyticsSettings": {
       "Mixpanel"         : {"token":  "77f4c4ffc890348da0580f935c77726e", "people": true}
