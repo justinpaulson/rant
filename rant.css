@@ -275,6 +275,16 @@ body {
   width: 20%;
 }
 
+.employer-logo-image.inactive {
+  -webkit-filter: opacity(50%) grayscale(100%);
+  filter: opacity(50%) grayscale(100%);
+}
+
+.employer-logo-image.inactive:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+
 .employer-details,
 .education-details {
   width:100%;
@@ -525,6 +535,16 @@ body {
   text-align: center;
   float: left;
   width: 33.33%;
+}
+
+.education-logo-image.inactive {
+  -webkit-filter: opacity(50%) grayscale(100%);
+  filter: opacity(50%) grayscale(100%);
+}
+
+.education-logo-image.inactive:hover {
+  -webkit-filter: none;
+  filter: none;
 }
 
 .organization-logo {

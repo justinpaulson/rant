@@ -83,3 +83,4 @@ Router.route '/blog/categories/edit', name: 'editCategories',
   waitOn: ->
     $('li.navbar-link').removeClass 'active'
     $('li#blog-link').addClass 'active'
+Router.route '/admin_panel', name: 'adminPanel'
