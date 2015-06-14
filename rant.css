@@ -275,6 +275,10 @@ body {
   width: 20%;
 }
 
+.employer-logo-image {
+  cursor: pointer;
+}
+
 .employer-logo-image.inactive {
   -webkit-filter: opacity(50%) grayscale(100%);
   filter: opacity(50%) grayscale(100%);
@@ -535,6 +539,10 @@ body {
   text-align: center;
   float: left;
   width: 33.33%;
+}
+
+.education-logo-image {
+  cursor: pointer;
 }
 
 .education-logo-image.inactive {
