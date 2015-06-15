@@ -3,3 +3,6 @@ Template.adminPanel.helpers
   admin_user: -> if Meteor.users.findOne().admin then true else false
 
 Template.adminPanel.rendered = () ->
+  console.log "We be rendering!"
+  $('#import-moves').click (e) =>
+    console.log "We be importing moves!"
